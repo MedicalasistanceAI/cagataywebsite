@@ -178,6 +178,14 @@ footer a{color:#cfe0dc}
   .cards,.contact-grid,.mem-list,.pub-grid{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+
+/* BILGI YAZILARI */
+.bilgi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:28px}
+.bilgi-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 16px;text-decoration:none;color:inherit;transition:.2s;display:block}
+.bilgi-card:hover{border-color:var(--sea);box-shadow:0 8px 24px rgba(14,63,61,.08);transform:translateY(-2px)}
+.bilgi-card h3{font-size:.98rem;color:var(--pine);margin-bottom:6px}
+.bilgi-card p{font-size:.84rem;color:var(--muted);margin:0}
+.alt .bilgi-card{background:var(--paper)}
 </style>
 
 <link rel="canonical" href="https://cavusoglucagatay.com/">
@@ -223,6 +231,7 @@ footer a{color:#cfe0dc}
       <li><a href="#longevity" data-tr="Longevity" data-en="Longevity">Longevity</a></li>
       <li><a href="#kongreler" data-tr="Konuşmalar" data-en="Talks">Konuşmalar</a></li>
       <li><a href="#yayinlar" data-tr="Yayınlar" data-en="Publications">Yayınlar</a></li>
+      <li><a href="#bilgi" data-tr="Bilgi" data-en="Articles">Bilgi</a></li>
       <li><a href="#iletisim" data-tr="İletişim" data-en="Contact">İletişim</a></li>
       <li><button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button></li>
       <li><a class="cta-btn" href="https://wa.me/90XXXXXXXXXX?text=Merhaba%2C%20randevu%20almak%20istiyorum." target="_blank" rel="noopener" data-tr="Randevu" data-en="Appointment">Randevu</a></li>
@@ -414,6 +423,24 @@ footer a{color:#cfe0dc}
 </section>
 
 <a class="fab" href="https://wa.me/90XXXXXXXXXX?text=Merhaba%2C%20randevu%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.7-.3z" fill="currentColor"/></svg></a>
+
+
+<section id="bilgi" class="alt">
+  <div class="container">
+    <span class="eyebrow">Bilgi yazıları</span>
+    <h2>Mersin dahiliye, geriatri ve sık konular</h2>
+    <p class="lead">Bilgilendirici sayfalar; tanı veya tedavi yerine geçmez. Randevu için iletişim bölümünü kullanın.</p>
+    <div class="bilgi-grid">
+      <a class="bilgi-card" href="/mersin-dahiliye.html"><h3>Mersin dahiliye</h3><p>İç hastalıkları ve genel değerlendirme</p></a>
+      <a class="bilgi-card" href="/mersin-geriatri.html"><h3>Mersin geriatri</h3><p>Yaşlı sağlığı ve fonksiyonel değerlendirme</p></a>
+      <a class="bilgi-card" href="/sarkopeni.html"><h3>Sarkopeni</h3><p>Kas kaybı, güç ve kırılganlık</p></a>
+      <a class="bilgi-card" href="/anemi-demir-eksikligi.html"><h3>Anemi &amp; demir</h3><p>Halsizlik ve demir eksikliği çerçevesi</p></a>
+      <a class="bilgi-card" href="/halsizlik-yorgunluk.html"><h3>Halsizlik &amp; yorgunluk</h3><p>Kilo kaybı uyarı işaretleri</p></a>
+      <a class="bilgi-card" href="/unutkanlik-demans-alzheimer.html"><h3>Unutkanlık &amp; demans</h3><p>Bilişsel şikâyetlerde bilgilendirme</p></a>
+      <a class="bilgi-card" href="/vitamin-takviye-otc.html"><h3>Vitamin &amp; takviye</h3><p>OTC ürünlere temkinli yaklaşım</p></a>
+    </div>
+  </div>
+</section>
 
 <footer>
   <div class="container">
